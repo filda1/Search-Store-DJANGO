@@ -1,0 +1,75 @@
+
+
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="row ln-content-header-section">
+<div class="col-lg-2"></div>
+<div class="col-lg-6 ln-col">
+<h1 class="ln-page-l1-title">
+Listen Real-Time
+</h1>
+<div class="ln-right-margin-2x">
+It's like Google Analytics Real-Time, but for podcast episodes. These are the podcast episodes being listened to via Listen Notes right now.
+</div>
+<div style="display: none;" id="ln-chrome-ext" class="ln-top-margin-10x">
+<a href="https://chrome.google.com/webstore/detail/listen-notes-for-chrome/mgfcbojdgmjgafiihonneempohjhdjge" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" onClick="real_ga('send', 'event', 'Click Browser Ext Promo', 'Click Chrome Promo');" aria-label="Download Listen Notes Chrome extension">
+<span class="ln-secondary-btn-text"><i class="fab fa-chrome ln-right-padding-1x"></i> Listen Notes for Chrome</span>
+</a>
+<div>
+<small class="text-muted">The fastest way to find podcasts!</small>
+</div>
+</div>
+<div style="display: none;" id="ln-edge-ext" class="ln-top-margin-10x">
+<a href="https://microsoftedge.microsoft.com/addons/detail/eboeelepapjbeocfhamnjjpeoooepjjj" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" onClick="real_ga('send', 'event', 'Click Browser Ext Promo', 'Click Edge Promo');" aria-label="Download Microsoft Edge addon">
+<span class="ln-secondary-btn-text">
+<img src="https://cdn-images-1.listennotes.com/web/image/4e568f93c6a9439f97fc38571340774c.png" alt="Microsoft Edge logo" width="20" class="ln-right-padding-1x" />
+Listen Notes for Edge</span>
+</a>
+<div>
+<small class="text-muted">The fastest way to find podcasts!</small>
+</div>
+</div>
+</div>
+<div class="col-lg-3 ln-col">
+<div class="ln-sidebar-card ln-desktop-only">
+<div id="ln-desktop-sidebar" class="ln-bottom-margin-5x text-center">
+<div class="ln-sidebar-ads ln-left-padding-1x">
+<a href="/ads/" rel="nofollow" class="ln-ads-attribution text-left">Advertisement</a>
+
+<div id="bsa-zone_1587058446801-7_123456" class="ln-gpt-container"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row ln-content-body-section ln-grey-bg">
+<div class="col-lg-1"></div>
+<div class="col-lg-10 ln-col">
+<div class="ln-mobile-only" id="ln-top-banner2">
+<div class="ln-home-feed-ad ln-top-banner2">
+<div class="ln-top-ad text-center">
+
+<a href="/ads/" rel="nofollow" class="ln-ads-attribution text-left">Advertisement</a>
+
+<div id="bsa-zone_1587057798270-1_123456" class="ln-gpt-container"></div>
+</div>
+</div>
+</div>
+<div id="ln-spinner-loader" class="text-center">
+<div class="lds-ring">
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+</div>
+</div>
+<div id="react-app"></div>
+</div>
+</div>
+<div id="audio-player"></div>
+</div>
+
+
+{% endblock %}
